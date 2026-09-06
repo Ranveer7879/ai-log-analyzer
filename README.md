@@ -1,6 +1,3 @@
-Aur README ke **Problem → Solution** part mein simple language honi chahiye:
-
-```markdown
 # ❗ Problem Statement
 
 When multiple servers are used in an organization, continuously
@@ -32,4 +29,22 @@ The result is displayed on a centralized dashboard.
 
 The system can also be extended to send alerts when an anomaly is
 detected.
+
+# 🛠️ Technology Stack
+
+| Technology | Purpose |
+|------------|---------|
+| Python | Backend, Agent and AI |
+| Flask | REST API / Backend |
+| MySQL | Store monitoring data |
+| Psutil | Collect CPU, RAM and Disk |
+| Requests | Send agent data to backend |
+| Pandas | Data processing |
+| Scikit-learn | Machine Learning |
+| Isolation Forest | Anomaly detection |
+| Joblib | Save/load ML model |
+| HTML | Dashboard structure |
+| CSS | Dashboard design |
+| JavaScript | Dashboard data and interaction |
+| Git/GitHub | Version control |
 
