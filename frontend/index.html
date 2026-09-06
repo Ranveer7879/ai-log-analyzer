@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Server Monitor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>AI Monitor</h2>
+
+    <nav>
+        <a class="active">Dashboard</a>
+        <a>Servers</a>
+        <a>Alerts</a>
+        <a>Activity</a>
+    </nav>
+
+    <div class="sidebar-bottom">
+        <p>AI Monitoring</p>
+        <span>v1.0</span>
+    </div>
+</div>
+
+
+<main class="main">
+
+    <header class="topbar">
+        <div>
+            <h1>Server Dashboard</h1>
+            <p>Real-time infrastructure monitoring</p>
+        </div>
+
+        <div class="status">
+            <span class="dot"></span>
+            System Online
+        </div>
+    </header>
+
+
+    <!-- Statistics -->
+    <section class="stats">
+
+        <div class="card">
+            <div class="card-title">Total Servers</div>
+            <div class="value" id="totalServers">0</div>
+            <div class="small">Monitored machines</div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Average CPU</div>
+            <div class="value" id="avgCpu">0%</div>
+            <div class="progress">
+                <div id="cpuBar"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Average RAM</div>
+            <div class="value" id="avgRam">0%</div>
+            <div class="progress">
+                <div id="ramBar"></div>
+            </div>
+        </div>
+
+        <div class="card danger-card">
+            <div class="card-title">Anomalies</div>
+            <div class="value danger" id="anomalies">0</div>
+            <div class="small">AI detected issues</div>
+        </div>
+
+    </section>
+
+
+    <!-- Server Overview -->
+    <section class="section">
+
+        <div class="section-header">
+            <div>
+                <h2>Server Overview</h2>
+                <p>Live server health and AI status</p>
+            </div>
+
+            <button onclick="loadMetrics()">↻ Refresh</button>
+        </div>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Server</th>
+                        <th>CPU</th>
+                        <th>RAM</th>
+                        <th>Disk</th>
+                        <th>AI Status</th>
+                        <th>Last Update</th>
+                    </tr>
+                </thead>
+
+                <tbody id="serverTable">
+                    <tr>
+                        <td colspan="6" class="loading">
+                            Loading server data...
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- Recent Activity -->
+    <section class="section">
+
+        <div class="section-header">
+            <div>
+                <h2>Recent Activity</h2>
+                <p>Latest monitoring data</p>
+            </div>
+        </div>
+
+        <div id="activity" class="activity">
+            Loading activity...
+        </div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

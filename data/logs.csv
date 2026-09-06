@@ -1,9 +1,0 @@
-timestamp,level,message,cpu,ram
-2026-09-01 10:00:00,INFO,Server started,30,40
-2026-09-01 10:01:00,INFO,User login successful,35,42
-2026-09-01 10:02:00,WARNING,High CPU usage,91,70
-2026-09-01 10:03:00,ERROR,Database connection failed,95,85
-2026-09-01 10:04:00,INFO,Request completed,40,45
-2026-09-01 10:05:00,ERROR,Database connection failed,96,90
-2026-09-01 10:06:00,WARNING,Memory usage high,70,92
-2026-09-01 10:07:00,INFO,Server running normally,35,50
