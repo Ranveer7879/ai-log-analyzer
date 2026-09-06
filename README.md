@@ -1,3 +1,13 @@
+# 🤖 AI Server Monitoring & Anomaly Detection Platform
+
+An AI-powered server monitoring platform that continuously monitors
+CPU, RAM and Disk usage of servers and detects unusual system behavior
+using Machine Learning.
+
+The goal of this project is to build a real-world monitoring platform
+for DevOps Engineers and System Administrators where multiple servers
+can be monitored from a single centralized dashboard
+
 # ❗ Problem Statement
 
 When multiple servers are used in an organization, continuously
